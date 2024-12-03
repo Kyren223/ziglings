@@ -18,7 +18,8 @@
 const print = @import("std").debug.print;
 
 pub fn main() void {
-    var foo_frame = async foo();
+    const foo_frame = async foo();
+    _ = foo_frame;
 }
 
 fn foo() void {
